@@ -15,11 +15,7 @@
             "fields": [
                 {
                     "name": "terrainType",
-                    "type": "Integer"
-                },
-                {
-                    "name": "vegetationType",
-                    "type": "Integer"
+                    "type": "List"
                 }
             ]
         }
