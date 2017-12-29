@@ -1,15 +1,4 @@
-TERRAIN_TYPES = {
-    FLAT=0,
-    HILLS=1,
-    MOUNTAINS=2
-}
-
-VEGETATION_TYPES = {
-    NONE=0,
-    GRASS=1,
-    FOREST=2,
-    SWAMP=3
-}
+require "terrain"
 
 function world_init()
     w_info("Initializing world rules for the world "..W.name)
