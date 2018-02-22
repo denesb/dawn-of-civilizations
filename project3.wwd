@@ -2,39 +2,5 @@
     "name": "Project 3",
     "uuid": "8eaa81b0-4e38-41a6-bd87-7233afd5d121",
     "rulesEntryPoint": "project3.lua",
-    "rulesType": "Lua",
-    "builtInObjectIds": {
-        "warmonger::core::PositionComponentType": 0,
-        "warmonger::core::EditComponentType": 1,
-        "warmonger::core::GraphicsComponentType": 2
-    },
-    "componentTypes": [
-        {
-            "id": 1000,
-            "name": "terrain",
-            "fields": [
-                {
-                    "name": "terrainType",
-                    "type": "List"
-                }
-            ]
-        }
-    ],
-    "civilizations": [
-        {
-            "id": 2000,
-            "name": "Generic"
-        }
-    ],
-    "banners": [
-        {
-            "id": 3000,
-            "name": "Unicolor",
-            "civilizations": []
-        }
-    ],
-    "colors": [
-        "#000000",
-        "#ffffff"
-    ]
+    "rulesType": "Lua"
 }

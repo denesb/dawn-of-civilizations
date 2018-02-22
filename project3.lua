@@ -3,26 +3,30 @@ require "terrain"
 function world_init()
     w_info("Initializing world rules for the world "..W.name)
 
-    w_debug("Creating global component-type table")
-
     COMPONENT_TYPES = {}
-    for i,c in pairs(W.component_types) do
-       COMPONENT_TYPES[c.name] = c
-    end
+    COMPONENT_TYPES["terrain"] = "terrain"
+    COMPONENT_TYPES["graphics"] = "graphics"
+    COMPONENT_TYPES["position"] = "position"
 
     w_debug("Creating global banner table")
-
     BANNERS = {}
-    for i,b in pairs(W.banners) do
-       BANNERS[b.name] = b
-    end
+    BANNERS["Generic"] = W:create_banner("Generic")
 
-    w_debug("Creating global civilizaation table")
-
+    w_debug("Creating global civilization table")
     CIVILIZATIONS = {}
-    for i,c in pairs(W.civilizations) do
-       CIVILIZATIONS[c.name] = c
-    end
+    CIVILIZATIONS["generic"] = W:create_civilization("generic")
+
+    w_debug("Creating global colors table")
+    COLORS = {}
+    COLORS["black"] = W:create_color("black")
+    COLORS["grey"] = W:create_color("grey")
+    COLORS["white"] = W:create_color("white")
+    COLORS["red"] = W:create_color("red")
+    COLORS["green"] = W:create_color("green")
+    COLORS["blue"] = W:create_color("blue")
+    COLORS["yellow"] = W:create_color("yellow")
+    COLORS["orange"] = W:create_color("orange")
+    COLORS["purple"] = W:create_color("purple")
 end
 
 function generate_map(M, size)
