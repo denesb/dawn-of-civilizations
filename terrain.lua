@@ -1,9 +1,7 @@
 CLIMATE = {
     COLD=1,
-    MODERATE_WET=2,
-    MODERATE_DRY=3,
-    HOT_WET=4,
-    HOT_DRY=5,
+    MODERATE=2,
+    HOT=3,
 }
 
 PRECIPITATION = {

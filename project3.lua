@@ -1,4 +1,4 @@
-require "terrain"
+require("random_map")
 
 function world_init()
     w_info("Initializing world rules for the world "..W.name)
@@ -29,10 +29,10 @@ function world_init()
     COLORS["purple"] = W:create_color("purple")
 end
 
-function generate_map(M, size)
+function generate_map(M, size, seed)
     w_info("Generating map content for map `"..M.name.."'")
 
-    M:generateMapNodes(size)
+    generate_random_terrain(M, seed)
 end
 
 function map_init(M)
