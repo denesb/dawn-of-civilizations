@@ -1,4 +1,5 @@
 require("terrain")
+require("graphics")
 
 local TERRAIN_IMAGES = {
     TUNDRA_FLAT = "cold.png",
@@ -47,16 +48,11 @@ function generate_terrain(M, map_node)
     terrain_component = terrain_entity:create_component(COMPONENT_TYPES.terrain)
     terrain_component.terrain = TERRAINS[table.getn(TERRAINS)]
 
-    graphics_component = terrain_entity:create_component(COMPONENT_TYPES.graphics)
-    graphics_component.x = 0
-    graphics_component.y = 0
-    graphics_component.z = 0
-    graphics_component.path = "terrain/moderate_wet.png"
-
     position_component = terrain_entity:create_component(COMPONENT_TYPES.position)
     position_component.map_node = map_node
-end
 
+    add_graphics_component(terrain_entity)
+end
 
 function generate_random_terrain(M, seed)
     math.randomseed(seed)
