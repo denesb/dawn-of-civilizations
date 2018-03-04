@@ -33,5 +33,5 @@ function add_graphics_component(entity)
     graphics_component.x = 0
     graphics_component.y = 0
     graphics_component.z = 0
-    graphics_component.path = TERRAIN_IMAGES[entity.terrain.terrain]
+    graphics_component.path = TERRAIN_IMAGES[entity.terrain.key]
 end

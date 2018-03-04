@@ -19,7 +19,7 @@ function generate_terrain(M, map_node)
     terrain_entity = M:create_entity()
 
     terrain_component = terrain_entity:create_component(COMPONENT_TYPES.terrain)
-    terrain_component.terrain = TERRAIN_KEYS[i]
+    terrain_component.key = TERRAIN_KEYS[i]
 
     position_component = terrain_entity:create_component(COMPONENT_TYPES.position)
     position_component.map_node = map_node
