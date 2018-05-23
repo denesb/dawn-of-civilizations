@@ -1,0 +1,6 @@
+{
+    "name": "Development Surface",
+    "description": "Development world surface for Dawn of Civilizations",
+    "tileWidth": 110,
+    "tileHeight": 128
+}
