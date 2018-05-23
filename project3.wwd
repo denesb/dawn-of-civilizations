@@ -1,6 +1,0 @@
-{
-    "name": "Project 3",
-    "uuid": "8eaa81b0-4e38-41a6-bd87-7233afd5d121",
-    "rulesEntryPoint": "project3.lua",
-    "rulesType": "Lua"
-}

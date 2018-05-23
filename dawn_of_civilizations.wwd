@@ -1,0 +1,6 @@
+{
+    "name": "Dawn of Civilizations",
+    "uuid": "8eaa81b0-4e38-41a6-bd87-7233afd5d121",
+    "rulesEntryPoint": "dawn_of_civilizations.lua",
+    "rulesType": "Lua"
+}
