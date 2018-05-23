@@ -10,7 +10,10 @@ function world_init()
 
     w_debug("Creating global banner table")
     BANNERS = {}
-    BANNERS["Generic"] = W:create_banner("Generic")
+    BANNERS["stripes_horizontal"] = W:create_banner("stripes_horizontal")
+    BANNERS["stripes_vertical"] = W:create_banner("stripes_vertical")
+    BANNERS["bicolor_horizontal"] = W:create_banner("bicolor_horizontal")
+    BANNERS["bicolor_vertical"] = W:create_banner("bicolor_vertical")
 
     w_debug("Creating global civilization table")
     CIVILIZATIONS = {}
