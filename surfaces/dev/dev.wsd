@@ -2,5 +2,24 @@
     "name": "Development Surface",
     "description": "Development world surface for Dawn of Civilizations",
     "tileWidth": 110,
-    "tileHeight": 128
+    "tileHeight": 128,
+    "banners": {
+        "stripes_horizontal": "banners/stripes_horizontal.png",
+        "stripes_vertical": "banners/stripes_vertical.png",
+        "bicolor_horizontal": "banners/bicolor_horizontal.png",
+        "bicolor_vertical": "banners/bicolor_vertical.png"
+    },
+    "colors": {
+        "black": "black",
+        "blue": "blue",
+        "cyan": "cyan",
+        "green": "green",
+        "grey": "grey",
+        "magenta": "magenta",
+        "orange": "orange",
+        "purple": "purple",
+        "red": "red",
+        "white": "white",
+        "yellow": "yellow"
+    }
 }
