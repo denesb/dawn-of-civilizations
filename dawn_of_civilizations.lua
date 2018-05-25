@@ -10,10 +10,10 @@ function world_init()
 
     w_debug("Creating global banner table")
     BANNERS = {}
-    BANNERS["stripes_horizontal"] = W:create_banner("stripes_horizontal")
-    BANNERS["stripes_vertical"] = W:create_banner("stripes_vertical")
-    BANNERS["bicolor_horizontal"] = W:create_banner("bicolor_horizontal")
-    BANNERS["bicolor_vertical"] = W:create_banner("bicolor_vertical")
+    BANNERS["Stripes Horizontal"] = W:create_banner("Stripes Horizontal")
+    BANNERS["Stripes Vertical"] = W:create_banner("Stripes Vertical")
+    BANNERS["Bicolor Horizontal"] = W:create_banner("Bicolor Horizontal")
+    BANNERS["Bicolor Vertical"] = W:create_banner("Bicolor Vertical")
 
     w_debug("Creating global civilization table")
     CIVILIZATIONS = {}
@@ -21,17 +21,17 @@ function world_init()
 
     w_debug("Creating global colors table")
     COLORS = {}
-    COLORS["black"] = W:create_color("black")
-    COLORS["blue"] = W:create_color("blue")
-    COLORS["cyan"] = W:create_color("cyan")
-    COLORS["green"] = W:create_color("green")
-    COLORS["grey"] = W:create_color("grey")
-    COLORS["magenta"] = W:create_color("magenta")
-    COLORS["orange"] = W:create_color("orange")
-    COLORS["purple"] = W:create_color("purple")
-    COLORS["red"] = W:create_color("red")
-    COLORS["white"] = W:create_color("white")
-    COLORS["yellow"] = W:create_color("yellow")
+    COLORS["Black"] = W:create_color("Black")
+    COLORS["Blue"] = W:create_color("Blue")
+    COLORS["Cyan"] = W:create_color("Cyan")
+    COLORS["Green"] = W:create_color("Green")
+    COLORS["Grey"] = W:create_color("Grey")
+    COLORS["Magenta"] = W:create_color("Magenta")
+    COLORS["Orange"] = W:create_color("Orange")
+    COLORS["Purple"] = W:create_color("Purple")
+    COLORS["Red"] = W:create_color("Red")
+    COLORS["White"] = W:create_color("White")
+    COLORS["Yellow"] = W:create_color("Yellow")
 end
 
 function generate_map(M, size, seed)

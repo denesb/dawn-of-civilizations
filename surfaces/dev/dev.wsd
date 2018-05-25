@@ -4,22 +4,22 @@
     "tileWidth": 110,
     "tileHeight": 128,
     "banners": {
-        "stripes_horizontal": "banners/stripes_horizontal.png",
-        "stripes_vertical": "banners/stripes_vertical.png",
-        "bicolor_horizontal": "banners/bicolor_horizontal.png",
-        "bicolor_vertical": "banners/bicolor_vertical.png"
+        "Stripes Horizontal": "banners/stripes_horizontal.png",
+        "Stripes Vertical": "banners/stripes_vertical.png",
+        "Bicolor Horizontal": "banners/bicolor_horizontal.png",
+        "Bicolor Vertical": "banners/bicolor_vertical.png"
     },
     "colors": {
-        "black": "black",
-        "blue": "blue",
-        "cyan": "cyan",
-        "green": "green",
-        "grey": "grey",
-        "magenta": "magenta",
-        "orange": "orange",
-        "purple": "purple",
-        "red": "red",
-        "white": "white",
-        "yellow": "yellow"
+        "Black": "black",
+        "Blue": "blue",
+        "Cyan": "cyan",
+        "Green": "green",
+        "Grey": "grey",
+        "Magenta": "magenta",
+        "Orange": "orange",
+        "Purple": "purple",
+        "Red": "red",
+        "White": "white",
+        "Yellow": "yellow"
     }
 }
