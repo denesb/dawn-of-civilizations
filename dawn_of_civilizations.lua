@@ -38,7 +38,9 @@ end
 function generate_random_map_content(M, size, seed)
     w_info("Generating map content for map `"..M.name.."'")
 
-    generate_random_terrain(M, seed)
+    math.randomseed(seed)
+
+    generate_random_terrain(M)
 end
 
 function map_init(M)

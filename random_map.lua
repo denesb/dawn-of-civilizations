@@ -27,9 +27,7 @@ function generate_terrain(M, map_node)
     add_graphics_component(terrain_entity)
 end
 
-function generate_random_terrain(M, seed)
-    math.randomseed(seed)
-
+function generate_random_terrain(M)
     for i, map_node in pairs(M.map_nodes) do
         generate_terrain(M, map_node)
     end
