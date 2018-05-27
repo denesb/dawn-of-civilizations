@@ -35,7 +35,7 @@ function world_init()
     COLORS["Yellow"] = W:create_color("Yellow")
 end
 
-function generate_map(M, size, seed)
+function generate_random_map_content(M, size, seed)
     w_info("Generating map content for map `"..M.name.."'")
 
     generate_random_terrain(M, seed)
