@@ -4,9 +4,10 @@ function world_init()
     w_info("Initializing world rules for the world "..W.name)
 
     COMPONENT_TYPES = {}
-    COMPONENT_TYPES["terrain"] = "terrain"
+    COMPONENT_TYPES["faction"] = "faction"
     COMPONENT_TYPES["graphics"] = "graphics"
     COMPONENT_TYPES["position"] = "position"
+    COMPONENT_TYPES["terrain"] = "terrain"
 
     w_debug("Creating global banner table")
     BANNERS = {}
