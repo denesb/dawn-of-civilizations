@@ -23,7 +23,7 @@ local TERRAIN_IMAGES = {
     -- HOT VERY_DRY
     DESERT = "terrain/hot_dry.png",
     DESERT_DUNES = "terrain/hot_dry.png",
-    -- Moutains
+    -- Mountains
     LOW_MOUNTAINS = "terrain/moderate_wet.png",
     HIGH_MOUNTAINS = "terrain/moderate_wet.png",
 }
