@@ -119,3 +119,5 @@ Other planned features
 ======================
 
 * Basic city development
+* Random map generator scripts
+* Arbitrarily configurable units
