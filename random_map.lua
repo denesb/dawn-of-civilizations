@@ -24,7 +24,7 @@ function generate_terrain(M, map_node)
     position_component = terrain_entity:create_component(COMPONENT_TYPES.position)
     position_component.map_node = map_node
 
-    add_graphics_component(terrain_entity)
+    add_graphics_component_to_terrain(terrain_entity)
 end
 
 function generate_random_terrain(M)

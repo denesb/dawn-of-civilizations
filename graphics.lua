@@ -28,8 +28,8 @@ local TERRAIN_IMAGES = {
     HIGH_MOUNTAINS = "terrain/moderate_wet.png",
 }
 
-function add_graphics_component(entity)
-    graphics_component = entity:create_component(COMPONENT_TYPES.graphics)
+function add_graphics_component_to_terrain(terrain_entity)
+    graphics_component = terrain_entity:create_component(COMPONENT_TYPES.graphics)
     graphics_component.x = 0
     graphics_component.y = 0
     graphics_component.z = 0
