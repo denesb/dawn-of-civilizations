@@ -35,3 +35,12 @@ function add_graphics_component_to_terrain(terrain_entity)
     graphics_component.z = 0
     graphics_component.path = TERRAIN_IMAGES[entity.terrain.key]
 end
+
+function add_graphics_component_to_settlement(settlement_entity, parent_entity)
+    graphics_component = settlement_entity:create_component(COMPONENT_TYPES.graphics)
+    graphics_component.x = 0
+    graphics_component.y = 0
+    graphics_component.z = 0
+    graphics_component.path = "settlements/generic.png"
+    graphics_component.container = parent_entity
+end

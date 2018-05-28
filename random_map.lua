@@ -32,3 +32,27 @@ function generate_random_terrain(M)
         generate_terrain(M, map_node)
     end
 end
+
+function place_player(M, player)
+    i = math.random(M.map_nodes:size())
+
+    map_node = M.map_nodes[i]
+
+    settlement_entity = M:create_entity()
+
+    position_component = settlement_entity:create_component(COMPONENT_TYPES.position)
+    position_component.map_node = map_node
+
+    faction_component = settlement_entity:create_component(COMPONENT_TYPES.faction)
+    faction_component.faction = player
+
+    terrain_entity = find_terrain_for_node(map_node)
+
+    add_graphics_component_to_settlement(settlement_entity, terrain_entity)
+end
+
+function place_players(M)
+    for i, player in pairs(M.factions) do
+        place_player(M, player)
+    end
+end

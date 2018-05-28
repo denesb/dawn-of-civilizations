@@ -41,6 +41,7 @@ function generate_random_map_content(M, size, seed)
     math.randomseed(seed)
 
     generate_random_terrain(M)
+    place_players(M)
 end
 
 function map_init(M)
