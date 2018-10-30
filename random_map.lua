@@ -1,30 +1,19 @@
 require("terrain")
-require("graphics")
 
-local TERRAIN_KEYS = {}
+local TERRAIN_IDS = {}
 local N = 0
 
 do
     local i = 0
-    for key, def in pairs(TERRAIN) do
+    for id, def in pairs(TERRAIN) do
         i = i + 1
-        TERRAIN_KEYS[i] = key
+        TERRAIN_IDS[i] = id
     end
     N = i
 end
 
 function generate_terrain(M, map_node)
-    i = math.random(N)
-
-    terrain_entity = M:create_entity()
-
-    terrain_component = terrain_entity:create_component(COMPONENT_TYPES.terrain)
-    terrain_component.key = TERRAIN_KEYS[i]
-
-    position_component = terrain_entity:create_component(COMPONENT_TYPES.position)
-    position_component.map_node = map_node
-
-    add_graphics_component_to_terrain(terrain_entity)
+    map_node.terrain_type = TERRAIN_IDS[math.random(N)]
 end
 
 function generate_random_terrain(M)
@@ -38,17 +27,10 @@ function place_player(M, player)
 
     map_node = M.map_nodes[i]
 
-    settlement_entity = M:create_entity()
-
-    position_component = settlement_entity:create_component(COMPONENT_TYPES.position)
-    position_component.map_node = map_node
-
-    faction_component = settlement_entity:create_component(COMPONENT_TYPES.faction)
-    faction_component.faction = player
-
-    terrain_entity = find_terrain_for_node(map_node)
-
-    add_graphics_component_to_settlement(settlement_entity, terrain_entity)
+    settlement = M:create_settlement()
+    settlement.type = "GENERIC"
+    settlement.position = map_node
+    settlement.owner = player
 end
 
 function place_players(M)
