@@ -1,8 +1,10 @@
 {
     "name": "Development Surface",
     "description": "Development world surface for Dawn of Civilizations",
-    "tileWidth": 110,
-    "tileHeight": 128,
+    "tileSize": 128,
+    "gridSize": 32,
+    "rulesEntryPoint": "dev.lua",
+    "rulesType": "Lua",
     "banners": {
         "Stripes Horizontal": "banners/stripes_horizontal.png",
         "Stripes Vertical": "banners/stripes_vertical.png",
@@ -21,5 +23,13 @@
         "Red": "red",
         "White": "white",
         "Yellow": "yellow"
+    },
+    "graphicAssets": {
+        "terrain_flat_center": "terrain/flat.png",
+        "terrain_flat_side": "terrain/flat.png",
+        "terrain_hills_center": "terrain/hills-center.png",
+        "terrain_hills_side": "terrain/hills-side.png",
+        "terrain_mountains_center": "terrain/mountains-center.png",
+        "terrain_mountains_side": "terrain/mountains-side.png"
     }
 }
