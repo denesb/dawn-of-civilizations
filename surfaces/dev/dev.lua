@@ -1,3 +1,5 @@
+require("terrain")
+
 function init()
     GRAPHIC_ASSETS = {}
 
@@ -16,6 +18,8 @@ end
 
 function render_map_node(mn)
     gmn = graphic_map_node.new()
+
+    gmn.layers[0] = render_terrain_layer(mn)
 
     return gmn
 end
