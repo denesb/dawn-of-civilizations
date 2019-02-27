@@ -17,9 +17,9 @@ function init()
 end
 
 function render_map_node(mn)
-    gmn = graphic_map_node.new()
+    local gmn = graphic_map_node.new()
 
-    gmn.layers[0] = render_terrain_layer(mn)
+    gmn.layers:add(render_terrain_layer(mn))
 
     return gmn
 end
@@ -28,7 +28,7 @@ function render_map(M)
     gm = graphic_map.new()
 
     for i, map_node in pairs(M.map_nodes) do
-        gm.map_nodes[i] = render_map_node(map_node)
+        gm.map_nodes:add(render_map_node(map_node))
     end
 
     return gm
