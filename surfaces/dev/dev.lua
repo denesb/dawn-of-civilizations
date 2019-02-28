@@ -19,6 +19,7 @@ end
 function render_map_node(mn)
     local gmn = graphic_map_node.new()
 
+    gmn.map_node = mn
     gmn.layers:add(render_terrain_layer(mn))
 
     return gmn
