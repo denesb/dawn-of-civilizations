@@ -30,6 +30,7 @@
         "terrain_hills_center": "terrain/hills-center.png",
         "terrain_hills_side": "terrain/hills-side.png",
         "terrain_mountains_center": "terrain/mountains-center.png",
-        "terrain_mountains_side": "terrain/mountains-side.png"
+        "terrain_mountains_side": "terrain/mountains-side.png",
+        "settlement_generic": "settlements/generic.png"
     }
 }

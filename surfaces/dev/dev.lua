@@ -1,4 +1,5 @@
 require("terrain")
+require("settlement")
 
 function init()
     GRAPHIC_ASSETS = {}
@@ -19,8 +20,12 @@ end
 function render_map_node(mn)
     local gmn = graphic_map_node.new()
 
-    gmn.map_node = mn
-    gmn.layers:add(render_terrain_layer(mn))
+    gmn.map_node = mn.map_node
+    gmn.layers:add(render_terrain_layer(mn.map_node))
+
+    if mn.settlement then
+        gmn.layers:add(render_settlement_layer(mn.settlement))
+    end
 
     return gmn
 end
@@ -28,8 +33,19 @@ end
 function render_map(M)
     gm = graphic_map.new()
 
-    for i, map_node in pairs(M.map_nodes) do
-        gm.map_nodes:add(render_map_node(map_node))
+    local map_nodes = {}
+
+    for i, mn in pairs(M.map_nodes) do
+        map_nodes[mn.id] = {map_node = mn,}
+    end
+
+    for _, s in pairs(M.settlements) do
+        map_nodes[s.position.id].settlement = s
+    end
+
+
+    for mn_id, mn in pairs(map_nodes) do
+        gm.map_nodes:add(render_map_node(mn))
     end
 
     return gm
